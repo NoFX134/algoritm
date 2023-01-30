@@ -1,5 +1,7 @@
 package leetCodeYandex
 
+import kotlin.math.abs
+
 class Square {
     fun sortedSquares(nums: IntArray): IntArray {
         val result = IntArray(nums.size)
@@ -7,7 +9,7 @@ class Square {
         var end = nums.size - 1
 
         for (i in nums.size - 1 downTo 0) {
-            if (kotlin.math.abs(nums[start]) > kotlin.math.abs(nums[end])) {
+            if (abs(nums[start]) > abs(nums[end])) {
                 result[i] = nums[start] * nums[start]
                 start++
             } else {

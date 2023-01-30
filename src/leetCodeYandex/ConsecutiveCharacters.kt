@@ -18,6 +18,6 @@ fun maxPower(s: String): Int? {
 }
 
 fun main() {
-    val ans = maxPower("c")
+    val ans = maxPower("cddffaaaa")
     println(ans)
 }

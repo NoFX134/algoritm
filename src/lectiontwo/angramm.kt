@@ -1,17 +1,14 @@
 package lectiontwo
 
-import java.util.Collections.max
-import java.util.Collections.min
-
 fun main() {
     val first = listOf("a", "a", "b", "a")
     val graduate = listOf(1, 2, 3, 5, 5, 5, 5, 5, 5, 5, 2).toMutableList()
-    val q = listOf(1,2,3,3)
-    val w = listOf(5,6,3,3)
+    val q = listOf(1, 2, 3, 3)
+    val w = listOf(5, 6, 3, 3)
     val second = "bbcdadaaaaassss"
     val third = "adadcbbsssaaaas"
     val a = q.intersect(w)
-  println(a)
+    println(a)
 }
 
 fun <T> Collection<T>.listToStringWithNoRepeatSymbols(): String {
@@ -38,6 +35,10 @@ fun <T> listToMap(list: List<T>): Map<T, Int> {
         map[item] = map.getOrDefault(item, 0) + 1
     }
     return map
+}
+
+fun nothing(): Any {
+   return false
 }
 
 fun listToMap(list: String): Map<Char, Int> {
